@@ -385,7 +385,6 @@ ul
     100% { opacity: 0;  display: none; }
 }
 
-
 @media only screen and (max-width: 49rem)
 {
     .page_content
