@@ -385,6 +385,36 @@ ul
     100% { opacity: 0;  display: none; }
 }
 
+.about_me_container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about_me_container_left
+{
+    display: flex;
+    padding-top: 11em;
+    padding-bottom: 11em;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me_container_left img
+{
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.about_me_container_right
+{
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+
 @media only screen and (max-width: 49rem)
 {
     .page_content
@@ -421,5 +451,30 @@ ul
     .footer
     {
         padding-top: 4em;
+    }
+
+    .about_me_container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_me_container_left
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .about_me_container_left img
+    {
+        max-width: 80%;
+        max-height: none;
+        margin-bottom: 20px;
+    }
+
+    .about_me_container_right
+    {
+        padding-left: 0;
+        text-align: left;
     }
 }
