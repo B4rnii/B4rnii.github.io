@@ -328,6 +328,7 @@ ul
     outline:0px;
     border: 1px solid #fabd2f;
 }
+/*  */
 
 .inline_link
 {
@@ -413,6 +414,116 @@ ul
     flex: 1;
     padding-left: 50px;
     padding-right: 0px;
+}
+
+.back_button
+{
+    color: #fabd2f;
+}
+
+.back_button::after
+{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #fabd2f;
+    display: block;
+    transition: .15s ease-in-out;
+}
+
+.back_button:hover::after
+{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #fabd2f;
+    display: block;
+}
+
+.standalone_link_container
+{
+	color: #ebb2b2;
+	text-decoration: none;
+	margin-left: 0;
+	padding-bottom: 1.5em;
+    font-family: 'HeaderLink';
+}
+
+.title
+{
+    padding-top: 0em;
+    color: var(--secondary_text_color);
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0.5em;
+    font-family: 'Title';
+    /* text-transform: uppercase; */
+    font-size: 1.5em;
+}
+
+.subtitle
+{
+    color: var(--sub_text_color);
+    padding-left: 0;
+    padding-right: 0;
+	padding-bottom: 1em;
+    font-family: 'Body';
+    font-size: 1.2em;
+}
+
+.date
+{
+    color: var(--date_text_color);
+    padding-left: 0;
+    padding-right: 0;
+	padding-bottom: 1em;
+    font-family: 'Body';
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.read_time
+{
+    color: var(--sub_text_color);
+    padding-left: 0;
+    padding-right: 0;
+	padding-bottom: 1em;
+    font-family: 'Body';
+    font-size: 0.8em;
+}
+
+.code
+{
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #282828;
+    color: var(--sub_text_color);
+    font-family: 'Mono';
+	overflow: auto;
+	font-size: 1em;
+    border: 2px solid #1d2021;
+    border-radius: 0.2em;
+}
+
+.code_text
+{
+	font-family: 'Mono';
+}
+
+.page_banner
+{
+    height: 20em;
+    margin-bottom: 1em;
+    background-size: auto 175%;
+	background-position-x: center;
+    background-position-y: center;
+    border-radius: 0.2em;
 }
 
 @media only screen and (max-width: 49rem)
