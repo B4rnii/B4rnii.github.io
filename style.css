@@ -449,6 +449,24 @@ ul
     font-family: 'HeaderLink';
 }
 
+.blog_header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.spacer
+{
+    height: 30px;
+}
+
+.blog_header_left_column
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .title
 {
     padding-top: 0em;

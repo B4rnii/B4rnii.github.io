@@ -85,12 +85,21 @@ OnBlogLoad()
         .then(response => response.text())
         .then(data => {
           var content = new DOMParser().parseFromString(data, 'text/html').querySelector('body').innerText;
-          var readTime = calculateReadTime(content);
+          var readTime = CalculateBlogPostReadTime(content);
 		  let rt = li[i].getElementsByClassName("lister_item_read_time")[0];
 		  rt.innerHTML = readTime;
         })
         .catch(error => console.error('Error fetching post content:', error));
 	}
+}
+
+function
+OnBlogPostLoad()
+{
+	var content = document.querySelector('body').innerText;
+	var readTime = CalculateBlogPostReadTime(content);
+	let rt = document.getElementsByClassName("read_time")[0];
+	rt.innerHTML = readTime;
 }
 
 function
