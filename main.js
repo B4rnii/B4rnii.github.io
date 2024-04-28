@@ -125,3 +125,50 @@ SetClipboard(content, box_id)
 
 	ShowCopiedPopup(box_id);
 }
+
+function
+OpenMediaModal(media_url)
+{
+	var modal = document.getElementById('media_modal');
+	var image = document.getElementById('media_modal_image');
+	var video = document.getElementById('media_modal_video');
+	var video_source = document.getElementById('media_modal_video_source');
+	var type = media_url.split('.').pop().toLowerCase();
+
+	if(type === 'jpg' || type === 'png' || type === 'gif')
+	{
+		image.style.display = 'block';
+		video.style.display = 'none';
+		image.src = media_url;
+	}
+	else if(type === 'mp4')
+	{
+		image.style.display = 'none';
+		video.style.display = 'block';
+		video_source.src = media_url;
+		video.load();
+	}
+
+	modal.style.display = 'block';
+	
+	modal.addEventListener('click', function()
+	{
+		if(type === 'mp4')
+		{
+			video.currentTime = 0;
+		}
+	});
+}
+
+function
+CloseMediaModal()
+{
+	var modal = document.getElementById('media_modal');
+	modal.style.display = 'none';
+	
+	var video = document.getElementById('media_modal_video');
+	if(!video.paused)
+	{
+		video.pause();
+	}
+}

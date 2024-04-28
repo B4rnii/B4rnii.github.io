@@ -20,6 +20,8 @@
     <link rel="canonical" href="https://B4rnii.github.io">
 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../main.js"></script>
 </head>
 
 <body>
@@ -41,6 +43,29 @@
         <hr>
 
         <p>Coming back to Windows after using Linux with a window tiling manager, let's just say, <i>I was missing a lot of things</i>. That is why I've started working on "Worky", an application with a custom app launcher, window tiling manager and so much more.</p>
+
+        <div class="spacer"></div>
+        <h1 class="title_center">Screenshots</h1>
+            <hr>
+            <div class="screenshot_gallery">
+                <div class="screenshot_gallery_item" onclick="OpenMediaModal('../media/worky_project_preview.png')">
+                    <img src="../media/worky_project_preview.png" alt="Image 1">
+                    <span class="screenshot_gallery_item_icon"><i class="fas fa-image"></i></span>
+                </div>
+            </div>
+            
+            <div id="media_modal" class="media_modal">
+                <span class="media_modal_close" onclick="CloseMediaModal()">&times;</span>
+                <div class="media_modal_content">
+                    <img id="media_modal_image" style="display: none;">
+                    <video id="media_modal_video" style="display: none;" controls preload="metadata">
+                        <source id="media_modal_video_source" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     </div>
 
     <div class="footer">
