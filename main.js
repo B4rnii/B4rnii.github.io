@@ -172,3 +172,18 @@ CloseMediaModal()
 		video.pause();
 	}
 }
+
+function
+CopyCode(id)
+{
+	let code_div = document.getElementById(id);
+	let pre = code_div.getElementsByClassName("code")[0];
+	let button = code_div.getElementsByClassName("code_copy_button")[0];
+	button.textContent = "Copied";
+	navigator.clipboard.writeText(pre.innerText);
+
+	setTimeout(function()
+	{
+		button.textContent = "Copy";
+	}, 1000);
+}

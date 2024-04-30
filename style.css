@@ -534,6 +534,23 @@ ul
 	font-family: 'Mono';
 }
 
+.code_container
+{
+    position: relative;
+}
+  
+.code_copy_button
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #1d2021;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #ebdbb2;
+}
+
 .page_banner
 {
     height: 20em;
