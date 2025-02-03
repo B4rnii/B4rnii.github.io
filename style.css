@@ -52,7 +52,7 @@ canvas{
     
     margin: auto;
     padding: 10px;
-    box-shadow: 0 0 2em 50px;
+    box-shadow: 0 0 2em 50px black;
 }
 
 h1
