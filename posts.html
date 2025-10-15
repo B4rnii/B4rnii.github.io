@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Home | Barnabás Tiborcz</title>
+    <title>Posts | Barnabás Tiborcz</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Barnabás Tiborcz">
     <meta name="description" content="Barnabás Tiborcz's website.">
-    <meta property="og:title" content="Home | Barnabás Tiborcz">
+    <meta property="og:title" content="Posts | Barnabás Tiborcz">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://B4rnii.github.io">
     <meta property="og:site_name" content="Barnabás Tiborcz">
@@ -38,20 +38,13 @@
     </nav>
 
     <main class="main_container">
-        <h1>HOME</h1>
-        <p></p>
-
-        <h2>About Me</h2>
-        <p><br></p>
-        <div class="about_me_container">
-            <div class="about_me_container_left">
-                <img src="media/zoomed_pfp.jpg">
-            </div>
-            <div class="about_me_container_right">
-                <p>Hey, I'm Barni. I like building things, sharing ideas, and learning along the way. This space is a
-                    mix of my work, projects, and thoughts.</p>
-            </div>
+        <h1>POSTS</h1>
+        <div class="filter_container">
+            <input autofocus id="lister_search_0" class="lister_search" placeholder="Filter...">
+            <div class="tags_container" id="tags_container_0"></div>
         </div>
+
+        <div class="posts" id="posts_container_0"></div>
 
         <div class="divider div_transparent"></div>
         <ul id="socials_buttons">
@@ -73,6 +66,7 @@
         </ul>
     </main>
 
+    <script src="posts.js"></script>
     <script src="app.js"></script>
 </body>
 
